@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wheather App</title>
+        <link rel="stylesheet" href="clstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="card"><!--card that shows climates and all stuffs-->
+            <div class="search">
+                <input type="text" id="cityinput" placeholder="Search for a city" spellcheck="false"><!--search input-->
+                <button id="searchbtn"><i class="fas fa-search"></i></button><!--search button-->
+            </div>
+            <div class="weather">
+                <div class="weathericon"><i id="weathericon" class="fas fa-cloud-sun fa-5x"></i></div>
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">City Name</h2>
+                
+                <div class="details">
+                    <div class="col"><i class="fas fa-tint fa-2x"></i>
+                        <div>
+                            <p class="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col"><i class="fas fa-wind fa-2x"></i>
+                        <div>
+                            <p class="wind">--m/s</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                    <div class="timestamp">
+                        <p class="local-time"> Loading.. </p>
+                        <p class="local-date"> Loading.. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="clscript.js"></script>
+    </body>
+
+</html>

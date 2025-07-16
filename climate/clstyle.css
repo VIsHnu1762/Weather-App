@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+
+body{
+    background: linear-gradient(135deg, #0d2450, #5471a1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease-in-out;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 30px 25px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.8s ease;
+    
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px rgba(88, 130, 207, 0.25);
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.search input{
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    outline : none;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+.search button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+.search button:hover{
+    box-shadow: 2px 5px 15px rgba(33, 23, 165, 0.3);
+}
+.search button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.weathericon{
+    margin: 15px 20px;
+}
+.weathericon i {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -17px;
+}
+.city{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+}
+.col i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.col p{
+    font-size: 18px;
+    line-height: 1.3;
+}
+.timestamp{
+    position: absolute;
+    bottom: 55px;
+    right: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    color: #fff;
+    opacity: 0.8;
+    line-height: 2;
+    font-family: 'Poppins' , sans-serif;
+}
+.timestamp .local-time {
+    font-size: 16px;
+    font-weight: 700;
+}
+.timestamp .local-date {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.1s ease-in-out;
+  border: 2px solid #ff4d4d;
+}
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+    width: 90%;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .search input {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .search button {
+    height: 40px;
+    width: 40px;
+  }
+
+  .temp {
+    font-size: 48px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .col p {
+    font-size: 16px;
+  }
+
+  .timestamp {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .timestamp .local-time {
+    font-size: 15px;
+  }
+
+  .timestamp .local-date {
+    font-size: 14px;
+  }
+}
+
+
