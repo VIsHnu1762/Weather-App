@@ -5,7 +5,7 @@ It provides temperature, humidity, wind speed, and local time with a visually ap
 
 ---
 
-## 🚀 Features
+## 🚀 Feature
 
 - 🌍 **City-based Weather Search** — Enter any city name to get live weather updates.  
 - 🌡️ **Dynamic UI** — Changes card color based on temperature (cold, mild, or hot).  
